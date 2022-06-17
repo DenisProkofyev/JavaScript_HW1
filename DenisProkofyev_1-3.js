@@ -46,10 +46,10 @@ checkAge_2("Type check")
 const checkAge_3 = function(age){
     let age_2 = 18
     let age_3 = 60
-    if (age == '2') {
+    if ("0"<=age<="9") {
         age = +age
     }
-    if (typeof(age) != 'number'){
+    if (typeof(age) != "number"){
         console.log("Error! Wrong data type")
     } else if(age<age_2){
         console.log("You don't have access cause your age is " + age + ". It's less then " + age_2)
@@ -61,4 +61,4 @@ const checkAge_3 = function(age){
         console.log("Technical work")
     }
 }
-checkAge_3('2')
+checkAge_3("99")
